@@ -1,5 +1,6 @@
 resource "aws_rds_cluster" "data-platform-catalog-db" {
   cluster_identifier      = "data-platform-catalog-stage"
+  database_name           = "data_platform_catalog_stage"
   engine                  = "aurora-postgresql"
   engine_mode             = "serverless"
   scaling_configuration {
